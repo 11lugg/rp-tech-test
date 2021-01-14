@@ -1,0 +1,14 @@
+<form [formGroup]="feedbackForm" (ngSubmit)="formSubmit(feedbackForm)"> 
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <label>Company Name</label>
+    <input type="text" formControlName="company">
+    <label>Job Title</label>
+    <input type="text"  formControlName="jobtitle">
+    <label>Years in current role</label>
+    <input type="text" formControlName="years">
+    <label>What do you like about marketing corp</label>
+    <textarea id="" cols="30" rows="5" formControlName="like"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
